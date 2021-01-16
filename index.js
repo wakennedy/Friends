@@ -40,10 +40,20 @@ const epConfirm = function (array) {
 const getRandomInt = function (max) {
   return Math.floor(Math.random() * Math.floor(max));
 };
+const adjustList = function (episodeNumber, list) {
+  list.splice(episodeNumber, 1);
+  return JSON.stringify(list);
+};
 const pickEp = function (choices) {
+  //get randomization
   let number = getRandomInt(choices.length);
-  let ep = choices[number];
-  console.log(ep.name);
+  //get episode from that random number and 'Declare' it.
+  let episode = choices[number];
+  console.log(episode);
+
+  //take chosen episode out of list and update list
+  let newJson = adjustList(number, choices);
+  fs.writeFileSync("episodes.json", newJson);
 };
 
 console.log("App Start");
