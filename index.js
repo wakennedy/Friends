@@ -28,14 +28,26 @@ const epConfirm = function (array) {
     console.log(`${item.id} - ${i}`);
   }
 };
-///////////////////////////////////////////////////////////////////////////
 
-console.log("App Start");
-
-///////////////////////////////// JSON SETUP
+/////////////////////////////////X JSON SETUP
 // let newJson = JSON.stringify(mutateIndices(master_list));
 // fs.writeFileSync("episodes.json", newJson);
 // epConfirm(episodes_list);
 ////////////////////////////////////////////////
+
+///////////////////////////////////////////////////////////////////////////
+
+const getRandomInt = function (max) {
+  return Math.floor(Math.random() * Math.floor(max));
+};
+const pickEp = function (choices) {
+  let number = getRandomInt(choices.length);
+  let ep = choices[number];
+  console.log(ep.name);
+};
+
+console.log("App Start");
+
+pickEp(episodes_list);
 
 console.log("App Close");
