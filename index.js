@@ -24,10 +24,18 @@ const pickEp = function (choices) {
   let newJson = adjustList(number, choices);
   fs.writeFileSync("episodes.json", newJson);
 };
+const resetEps = function () {
+  fs.writeFileSync("episodes.json", raw_master_list);
+};
 
 console.log("App Start");
 
-pickEp(episodes_list);
-console.log(episodes_list.length);
+// resetEps();
+// console.log("Watched Episodes Reset");
+
+// console.log("Nothing Happened");
+
+// pickEp(episodes_list);
+// console.log(episodes_list.length);
 
 console.log("App Close");
