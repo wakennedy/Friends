@@ -6,6 +6,8 @@ const episodes_list = JSON.parse(raw_episodes_list);
 const raw_master_list = fs.readFileSync("master_episode_list.json");
 const master_list = JSON.parse(raw_master_list);
 
+let args = process.argv.slice(2);
+
 const getRandomInt = function (max) {
   return Math.floor(Math.random() * Math.floor(max));
 };
@@ -33,6 +35,19 @@ console.log("App Start");
 // resetEps();
 // console.log("Watched Episodes Reset");
 
+console.log(`Args: ${args}`);
+switch (args[0]) {
+  case "reset":
+    console.log("Watched Episodes Reset");
+    resetEps();
+    break;
+  case "random":
+    pickEp(episodes_list);
+    console.log(episodes_list.length);
+    break;
+  default:
+    console.log("Sorry, that is not something I know how to do.");
+}
 // console.log("Nothing Happened");
 
 // pickEp(episodes_list);
