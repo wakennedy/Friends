@@ -1,4 +1,5 @@
 const fs = require("fs");
+const fetch = require("node-fetch");
 
 const raw_episodes_list = fs.readFileSync("episodes.json");
 const episodes_list = JSON.parse(raw_episodes_list);
@@ -32,6 +33,12 @@ const resetEps = function () {
 
 console.log("App Start");
 
+const fetchAttempt = async function () {
+  let info = fetch("http://api.tvmaze.com/shows/1/episodes");
+  let result = await info;
+  console.log(JSON.parse(result));
+};
+
 // resetEps();
 // console.log("Watched Episodes Reset");
 
@@ -47,6 +54,7 @@ switch (args[0]) {
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
+    fetchAttempt();
 }
 // console.log("Nothing Happened");
 
