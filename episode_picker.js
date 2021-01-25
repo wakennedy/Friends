@@ -44,7 +44,8 @@ const fetchAttempt = async function (id) {
 // resetEps();
 // console.log("Watched Episodes Reset");
 const input = function () {
-  let sign = global.prompt("Please Enter Name", "Guest");
+  let sign = prompt("Please Enter Name ", "Guest");
+  console.log(`Hello ${sign}`);
 };
 
 console.log(`Args: ${args}`);
