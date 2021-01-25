@@ -43,7 +43,7 @@ const resetEps = function () {
 
 const displaySearchInfo = function (show) {
   console.log(`Name: ${show.name}`);
-  console.log(`ID: ${show.id}`);
+  console.log(`API-ID: ${show.id}`);
 };
 
 const searchFetch = async function (show) {
