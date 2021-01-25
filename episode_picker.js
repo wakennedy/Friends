@@ -34,9 +34,9 @@ const resetEps = function () {
 console.log("App Start");
 
 const fetchAttempt = async function () {
-  let info = fetch("http://api.tvmaze.com/shows/1/episodes");
+  let info = fetch("http://api.tvmaze.com/shows/1");
   let result = await info;
-  console.log(JSON.parse(result));
+  console.log(JSON.stringify(result));
 };
 
 // resetEps();
@@ -54,7 +54,7 @@ switch (args[0]) {
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
-  // fetchAttempt();
+    fetchAttempt();
 }
 // console.log("Nothing Happened");
 
