@@ -40,11 +40,17 @@ const resetEps = function () {
 //   let json = await result.json();
 //   console.log(json);
 // };
+
+const displaySearchInfo = function (show) {
+  console.log(`Name: ${show.name}`);
+  console.log(`ID: ${show.id}`);
+};
+
 const searchFetch = async function (show) {
   let req = fetch(`${SEARCHURL}${show}`);
   let res = await req;
   let json = await res.json();
-  console.log(json.name);
+  displaySearchInfo(json);
 };
 
 // resetEps();
@@ -83,5 +89,3 @@ switch (args[0]) {
 
 // pickEp(episodes_list);
 // console.log(episodes_list.length);
-
-console.log("App Close");
