@@ -4,4 +4,4 @@ A non-repeating 'FRIENDS' episode randomizer
 
 TO RUN:
 
-> node index.js
+> node episode_picker.js
