@@ -8,6 +8,8 @@ const episodes_list = JSON.parse(raw_episodes_list);
 const raw_master_list = fs.readFileSync("master_episode_list.json");
 const master_list = JSON.parse(raw_master_list);
 
+const SEARCHURL = "http://api.tvmaze.com/singlesearch/shows?q=";
+
 let args = process.argv.slice(2);
 
 const getRandomInt = function (max) {
@@ -32,13 +34,17 @@ const resetEps = function () {
   fs.writeFileSync("episodes.json", raw_master_list);
 };
 
-console.log("App Start");
-
-const fetchAttempt = async function (id) {
-  let info = fetch("http://api.tvmaze.com/shows/431");
-  let result = await info;
-  let json = await result.json();
-  console.log(json);
+// const fetchAttempt = async function (id) {
+//   let info = fetch("http://api.tvmaze.com/shows/431");
+//   let result = await info;
+//   let json = await result.json();
+//   console.log(json);
+// };
+const searchFetch = async function (show) {
+  let req = fetch(`${SEARCHURL}${show}`);
+  let res = await req;
+  let json = await res.json();
+  console.log(json.name);
 };
 
 // resetEps();
@@ -61,14 +67,17 @@ switch (args[0]) {
     console.log("Watched Episodes Reset");
     resetEps();
     break;
+  case "search":
+    searchFetch(args[1]);
+    break;
   case "random":
     pickEp(episodes_list);
     console.log(episodes_list.length);
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
-    // fetchAttempt();
-    input();
+  // fetchAttempt();
+  // input();
 }
 // console.log("Nothing Happened");
 
