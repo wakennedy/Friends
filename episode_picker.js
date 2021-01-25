@@ -33,10 +33,11 @@ const resetEps = function () {
 
 console.log("App Start");
 
-const fetchAttempt = async function () {
-  let info = fetch("http://api.tvmaze.com/shows/1");
+const fetchAttempt = async function (id) {
+  let info = fetch("http://api.tvmaze.com/shows/431");
   let result = await info;
-  console.log(JSON.stringify(result));
+  let json = await result.json();
+  console.log(json);
 };
 
 // resetEps();
