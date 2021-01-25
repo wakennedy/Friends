@@ -1,5 +1,6 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
+const prompt = require("prompt-sync")();
 
 const raw_episodes_list = fs.readFileSync("episodes.json");
 const episodes_list = JSON.parse(raw_episodes_list);
@@ -42,6 +43,9 @@ const fetchAttempt = async function (id) {
 
 // resetEps();
 // console.log("Watched Episodes Reset");
+const input = function () {
+  let sign = global.prompt("Please Enter Name", "Guest");
+};
 
 console.log(`Args: ${args}`);
 switch (args[0]) {
@@ -55,7 +59,8 @@ switch (args[0]) {
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
-    fetchAttempt();
+    // fetchAttempt();
+    input();
 }
 // console.log("Nothing Happened");
 
