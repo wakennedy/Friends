@@ -44,8 +44,15 @@ const fetchAttempt = async function (id) {
 // resetEps();
 // console.log("Watched Episodes Reset");
 const input = function () {
-  let sign = prompt("Please Enter Name ", "Guest");
-  console.log(`Hello ${sign}`);
+  let done = false;
+  while (!done) {
+    let sign = prompt("Please Enter Name ", "Guest");
+    console.log(`Hello ${sign}`);
+    let exit = prompt("Done?  ");
+    if (exit == "yes") {
+      done = true;
+    }
+  }
 };
 
 console.log(`Args: ${args}`);
