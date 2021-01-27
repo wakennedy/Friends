@@ -1,6 +1,6 @@
 const fs = require("fs");
 const fetch = require("node-fetch");
-const prompt = require("prompt-sync")();
+const prompt = require("prompt-sync")({ sigint: true });
 
 const raw_episodes_list = fs.readFileSync("episodes.json");
 const episodes_list = JSON.parse(raw_episodes_list);
