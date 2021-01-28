@@ -3,7 +3,8 @@ const fetch = require("node-fetch");
 const prompt = require("prompt-sync")({ sigint: true });
 
 const jsonSetup = require("./jsons/json_setup");
-const random = jsonSetup.pickEp();
+const random = jsonSetup.pickEp;
+const reset = jsonSetup.resetEps;
 
 // import { pickEp, resetEps } from "./jsons/json_setup";
 
@@ -76,14 +77,19 @@ console.log(`Args: ${args}`);
 switch (args[0]) {
   case "reset":
     console.log("Watched Episodes Reset");
-    setup.resetEps();
+    reset();
     break;
   case "search":
     searchFetch(args[1]);
     break;
   case "random":
     // pickEp(episodes_list);
-    random();
+    let info = random();
+    console.log(`S-Ep: ${info.season} - ${info.number}`);
+    console.log(`${info.summary}`);
+
+    // console.log(jsonSetup);
+
     // console.log(episodes_list.length);
     break;
   default:

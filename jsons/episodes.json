@@ -342,24 +342,6 @@
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40664" } }
   },
   {
-    "id": 40665,
-    "url": "http://www.tvmaze.com/episodes/40665/friends-1x20-the-one-with-the-evil-orthodontist",
-    "name": "The One With the Evil Orthodontist",
-    "season": 1,
-    "number": 20,
-    "type": "regular",
-    "airdate": "1995-04-06",
-    "airtime": "20:00",
-    "airstamp": "1995-04-07T00:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/23/59123.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/23/59123.jpg"
-    },
-    "summary": "<p>Chandler's not a very smooth operator when it comes to calling a woman he went out with; Rachel gets involved with her ex-fiancé.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40665" } }
-  },
-  {
     "id": 40666,
     "url": "http://www.tvmaze.com/episodes/40666/friends-1x21-the-one-with-the-fake-monica",
     "name": "The One With the Fake Monica",
@@ -826,24 +808,6 @@
     },
     "summary": "<p>When Rachel's divorcing parents both show up for her birthday, her friends hold two separate parties to keep them apart.</p>",
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40691" } }
-  },
-  {
-    "id": 40692,
-    "url": "http://www.tvmaze.com/episodes/40692/friends-2x23-the-one-with-the-chicken-pox",
-    "name": "The One With the Chicken Pox",
-    "season": 2,
-    "number": 23,
-    "type": "regular",
-    "airdate": "1996-05-09",
-    "airtime": "20:00",
-    "airstamp": "1996-05-10T00:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/23/59283.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/23/59283.jpg"
-    },
-    "summary": "<p>A submariner surfaces to spend two weeks with Phoebe, who's come down with chicken pox; Joey plays the role of a data processor at Chandler's company.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40692" } }
   },
   {
     "id": 40693,
@@ -1530,24 +1494,6 @@
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40730" } }
   },
   {
-    "id": 40731,
-    "url": "http://www.tvmaze.com/episodes/40731/friends-4x13-the-one-with-rachels-crush",
-    "name": "The One With Rachel's Crush",
-    "season": 4,
-    "number": 13,
-    "type": "regular",
-    "airdate": "1998-01-29",
-    "airtime": "20:00",
-    "airstamp": "1998-01-30T01:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/45/114640.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/45/114640.jpg"
-    },
-    "summary": "<p>Kathy's sexy role in a play irks Chandler; personal-shopper Rachel develops a crush on a client.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40731" } }
-  },
-  {
     "id": 40732,
     "url": "http://www.tvmaze.com/episodes/40732/friends-4x14-the-one-with-joeys-dirty-day",
     "name": "The One With Joey's Dirty Day",
@@ -1600,24 +1546,6 @@
     },
     "summary": "<p>Rachel throws an impromptu going-away party for Emily to lure Joshua into a social setting; pregnant vegetarian Phoebe craves meat.</p>",
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40734" } }
-  },
-  {
-    "id": 40735,
-    "url": "http://www.tvmaze.com/episodes/40735/friends-4x17-the-one-with-the-free-porn",
-    "name": "The One With the Free Porn",
-    "season": 4,
-    "number": 17,
-    "type": "regular",
-    "airdate": "1998-03-26",
-    "airtime": "20:00",
-    "airstamp": "1998-03-27T01:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/45/114644.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/45/114644.jpg"
-    },
-    "summary": "<p>Ross pursues his romance with Emily; Phoebe learns she's having triplets; the boys get free adult TV.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40735" } }
   },
   {
     "id": 40736,
@@ -2068,24 +1996,6 @@
     },
     "summary": "<p>Rachel takes up smoking for work reasons; Joey angles into an audition involving Ross's son, Ben.</p>",
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40760" } }
-  },
-  {
-    "id": 40761,
-    "url": "http://www.tvmaze.com/episodes/40761/friends-5x19-the-one-where-ross-cant-flirt",
-    "name": "The One Where Ross Can't Flirt",
-    "season": 5,
-    "number": 19,
-    "type": "regular",
-    "airdate": "1999-04-22",
-    "airtime": "20:00",
-    "airstamp": "1999-04-23T00:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/46/115072.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/46/115072.jpg"
-    },
-    "summary": "<p>Ross's flirting with the pizza-delivery girl falls flat; Joey's scene in a TV crime drama is cut.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40761" } }
   },
   {
     "id": 40762,
@@ -2896,24 +2806,6 @@
     },
     "summary": "<p>Ross plans a surprise for Monica and Chandler's wedding -- he wants to play the bagpipes. Dr. Drake Ramoray is coming out of his coma on Days of Our Lives. A diva will be killed off and her character's brain will be transplanted into Drake's. Phoebe and Rachel fight over a guy who left his cell phone in Central Perk.</p>",
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40806" } }
-  },
-  {
-    "id": 40807,
-    "url": "http://www.tvmaze.com/episodes/40807/friends-7x16-the-one-with-the-truth-about-london",
-    "name": "The One With the Truth About London",
-    "season": 7,
-    "number": 16,
-    "type": "regular",
-    "airdate": "2001-02-22",
-    "airtime": "20:00",
-    "airstamp": "2001-02-23T01:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/159/398570.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/159/398570.jpg"
-    },
-    "summary": "<p>Chandler becomes upset after learning that Monica only came to his room in London looking for Joey on the first night they were together. Joey is ordained as a minister through the Internet so that he can officiate the wedding. Phoebe becomes upset after taking headache medicine. Ross becomes upset after a baby-sitting Rachel teaches Ben how to play pranks.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40807" } }
   },
   {
     "id": 40808,
@@ -4012,24 +3904,6 @@
     },
     "summary": "<p>Monica and Chandler solicit Joey to write a letter to the adoption agency on their behalf. Joey discovers the thesaurus. Rachel's sister Amy visits and moves in with Rachel and Joey. She babysits Emma and gets the little girl's ears pierced. On their first anniversary, Phoebe spoils Mike's plans to propose, so she proposes to him. That doesn't go well, but the two get engaged anyway.</p>",
     "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40868" } }
-  },
-  {
-    "id": 40869,
-    "url": "http://www.tvmaze.com/episodes/40869/friends-10x06-the-one-with-rosss-grant",
-    "name": "The One With Ross's Grant",
-    "season": 10,
-    "number": 6,
-    "type": "regular",
-    "airdate": "2003-11-06",
-    "airtime": "20:00",
-    "airstamp": "2003-11-07T01:00:00+00:00",
-    "runtime": 30,
-    "image": {
-      "medium": "http://static.tvmaze.com/uploads/images/medium_landscape/196/492196.jpg",
-      "original": "http://static.tvmaze.com/uploads/images/original_untouched/196/492196.jpg"
-    },
-    "summary": "<p>Rachel and Monica fight over who will receive an ugly painting from Phoebe's apartment when Mike wants her to get rid of it. Chandler gets on Joey's bad side when he lies about watching Joey's audition tape. Ross is up for a big grant, although Charlie's ex-boyfriend is in charge of who gets it. Dr. Hobart tries to trade--Ross breaks up with Charlie and he'll get the grant. Eventually, Charlie and Dr. Hobart reconcile after he reveals his feelings for her.</p>",
-    "_links": { "self": { "href": "http://api.tvmaze.com/episodes/40869" } }
   },
   {
     "id": 40870,
