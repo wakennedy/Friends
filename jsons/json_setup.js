@@ -1,11 +1,12 @@
 const fs = require("fs");
-// const master = require("master_episode_list.json");
-// const working_episodes = require("episodes.json");
+const master = require("./master_episode_list.json");
+const working_episodes = require("./episodes.json");
 
-const raw_master_list = fs.readFileSync("master_episode_list.json");
+// const raw_master_list = fs.readFileSync("master_episode_list.json");
+const raw = fs.readFileSync("master_episode_list.json");
 const master_list = JSON.parse(raw_master_list);
 
-const raw_episodes_list = fs.readFileSync("episodes.json");
+const raw_episodes_list = fs.readFileSync(working_episodes);
 const episodes_list = JSON.parse(raw_episodes_list);
 
 const getRandomInt = function (max) {
