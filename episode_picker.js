@@ -2,7 +2,9 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 const prompt = require("prompt-sync")({ sigint: true });
 
-const setup = require("json_setup.js");
+// const setup = require("./jsons/json_setup");
+
+import { pickEp, resetEps } from "./jsons/json_setup";
 
 // const raw_episodes_list = fs.readFileSync("episodes.json");
 // const episodes_list = JSON.parse(raw_episodes_list);
@@ -80,7 +82,7 @@ switch (args[0]) {
     break;
   case "random":
     // pickEp(episodes_list);
-    setup.pickEp();
+    pickEp();
     console.log(episodes_list.length);
     break;
   default:
