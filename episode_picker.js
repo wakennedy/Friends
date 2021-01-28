@@ -2,7 +2,8 @@ const fs = require("fs");
 const fetch = require("node-fetch");
 const prompt = require("prompt-sync")({ sigint: true });
 
-const setup = require("./jsons/json_setup");
+const jsonSetup = require("./jsons/json_setup");
+const random = jsonSetup.pickEp();
 
 // import { pickEp, resetEps } from "./jsons/json_setup";
 
@@ -82,8 +83,8 @@ switch (args[0]) {
     break;
   case "random":
     // pickEp(episodes_list);
-    pickEp();
-    console.log(episodes_list.length);
+    random();
+    // console.log(episodes_list.length);
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
