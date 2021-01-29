@@ -8,8 +8,6 @@ const resetWorkingEpisodes = jsonSetup.resetEps;
 const fetchSetup = require("./fetch/fetch_setup");
 const search = fetchSetup.searchFetch;
 
-let args = process.argv.slice(2);
-
 const input = function () {
   let done = false;
   while (!done) {
@@ -21,18 +19,22 @@ const input = function () {
     }
   }
 };
+
+let args = process.argv.slice(2);
+let betterArgs = args.map((x) => x.toLowerCase());
+
 console.log("------------------------------");
 console.log(`Args: ${args}`);
 console.log("------------------------------");
 
-switch (args[0].toLowerCase()) {
+switch (betterArgs[0]) {
   case "reset":
     console.log("Watched Episodes Reset");
     console.log("------------------------------");
     resetWorkingEpisodes();
     break;
   case "search":
-    search(args[1]);
+    search(betterArgs[1]);
     break;
   case "random":
     let info = randomEpisode();
