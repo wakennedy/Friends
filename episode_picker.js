@@ -5,6 +5,9 @@ const jsonSetup = require("./jsons/json_setup");
 const randomEpisode = jsonSetup.pickEp;
 const resetWorkingEpisodes = jsonSetup.resetEps;
 
+const fetchSetup = require("./fetch/fetch_setup");
+const search = fetchSetup.searchFetch;
+
 let args = process.argv.slice(2);
 
 const input = function () {
@@ -30,6 +33,8 @@ switch (args[0]) {
     break;
   case "search":
     // searchFetch(args[1]);
+    search(args[1]);
+    console.log("search arg execute");
     break;
   case "random":
     let info = randomEpisode();
