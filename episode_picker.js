@@ -1,5 +1,5 @@
 const fs = require("fs");
-const fetch = require("node-fetch");
+// const fetch = require("node-fetch");
 const prompt = require("prompt-sync")({ sigint: true });
 
 const jsonSetup = require("./jsons/json_setup");
@@ -14,7 +14,7 @@ const reset = jsonSetup.resetEps;
 // const raw_master_list = fs.readFileSync("master_episode_list.json");
 // const master_list = JSON.parse(raw_master_list);
 
-const SEARCHURL = "http://api.tvmaze.com/singlesearch/shows?q=";
+// const SEARCHURL = "http://api.tvmaze.com/singlesearch/shows?q=";
 
 let args = process.argv.slice(2);
 
@@ -47,17 +47,17 @@ let args = process.argv.slice(2);
 //   console.log(json);
 // };
 
-const displaySearchInfo = function (show) {
-  console.log(`Name: ${show.name}`);
-  console.log(`API-ID: ${show.id}`);
-};
+// const displaySearchInfo = function (show) {
+//   console.log(`Name: ${show.name}`);
+//   console.log(`API-ID: ${show.id}`);
+// };
 
-const searchFetch = async function (show) {
-  let req = fetch(`${SEARCHURL}${show}`);
-  let res = await req;
-  let json = await res.json();
-  displaySearchInfo(json);
-};
+// const searchFetch = async function (show) {
+//   let req = fetch(`${SEARCHURL}${show}`);
+//   let res = await req;
+//   let json = await res.json();
+//   displaySearchInfo(json);
+// };
 
 // resetEps();
 // console.log("Watched Episodes Reset");
