@@ -1,8 +1,4 @@
 const fs = require("fs");
-const { Module } = require("module");
-
-// const master = require("./jsons/master_episode_list.json");
-// const working_episodes = require("./jsons/episodes.json");
 
 const raw_master_list = fs.readFileSync("./jsons/master_episode_list.json");
 const master_list = JSON.parse(raw_master_list);
@@ -31,9 +27,6 @@ const pickEp = function () {
 const resetEps = function () {
   fs.writeFileSync("./jsons/episodes.json", raw_master_list);
 };
-
-// module.exports.pickEp = pickEp(working_episode_list);
-// exports.resetEps = resetEps();
 
 module.exports = {
   pickEp,

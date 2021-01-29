@@ -24,7 +24,6 @@ console.log("------------------------------");
 
 switch (args[0]) {
   case "reset":
-    console.log("------------------------------");
     console.log("Watched Episodes Reset");
     console.log("------------------------------");
     resetWorkingEpisodes();
