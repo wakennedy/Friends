@@ -10,8 +10,14 @@ const searchFetch = async function (show) {
 };
 
 const displaySearchInfo = function (show) {
+  console.log("Results from API Search");
+  console.log("------------------------------");
   console.log(`Name: ${show.name}`);
   console.log(`API-ID: ${show.id}`);
+  console.log(`Premiered: ${show.premiered}`);
+  console.log("------------------------------");
+  console.log(`Summary: ${show.summary.replace(/<[^>]*>?/gm, "")}`);
+  console.log("------------------------------");
 };
 
 module.exports = {

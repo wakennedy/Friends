@@ -32,9 +32,7 @@ switch (args[0]) {
     resetWorkingEpisodes();
     break;
   case "search":
-    // searchFetch(args[1]);
     search(args[1]);
-    console.log("search arg execute");
     break;
   case "random":
     let info = randomEpisode();
@@ -42,7 +40,7 @@ switch (args[0]) {
     console.log("------------------------------");
     console.log(`${info.name}`);
     console.log("------------------------------");
-    console.log(`${info.summary}`);
+    console.log(`${info.summary.replace(/<[^>]*>?/gm, "")}`);
     console.log("------------------------------");
 
     break;
