@@ -22,8 +22,6 @@ const pickEp = function () {
   let number = getRandomInt(working_episode_list.length);
   //get episode from that random number and 'Declare' it.
   let episode = working_episode_list[number];
-  // console.log(`S-Ep: ${episode.season} - ${episode.number}`);
-  // console.log(`${episode.summary}`);
 
   //take chosen episode out of list and update list
   let newJson = adjustList(number, working_episode_list);
