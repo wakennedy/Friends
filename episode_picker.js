@@ -25,7 +25,7 @@ console.log("------------------------------");
 console.log(`Args: ${args}`);
 console.log("------------------------------");
 
-switch (args[0]) {
+switch (args[0].toLowerCase()) {
   case "reset":
     console.log("Watched Episodes Reset");
     console.log("------------------------------");
@@ -42,7 +42,6 @@ switch (args[0]) {
     console.log("------------------------------");
     console.log(`${info.summary.replace(/<[^>]*>?/gm, "")}`);
     console.log("------------------------------");
-
     break;
   default:
     console.log("Sorry, that is not something I know how to do.");
