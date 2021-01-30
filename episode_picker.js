@@ -27,7 +27,6 @@ const input = function () {
         break;
       case "reset":
         console.log("Watched Episodes Reset");
-        console.log("------------------------------");
         resetWorkingEpisodes();
         break;
       case "search":
@@ -36,51 +35,25 @@ const input = function () {
       case "random":
         let info = randomEpisode();
         console.log(`S-Ep: ${info.season} - ${info.number}`);
-        console.log("------------------------------");
         console.log(`${info.name}`);
-        console.log("------------------------------");
         console.log(`${info.summary.replace(/<[^>]*>?/gm, "")}`);
-        console.log("------------------------------");
         break;
       default:
         console.log("error");
     }
-    // console.log(`Hello ${sign}`);
-    // let exit = prompt("Done?  ");
-    // if (exit == "yes") {
-    //   done = true;
-    // }
   }
 };
 
 let args = process.argv.slice(2);
 let betterArgs = args.map((x) => x.toLowerCase());
 
-console.log("------------------------------");
 console.log(`Args: ${args}`);
-console.log("------------------------------");
+// console.log("------------------------------");
 
 switch (betterArgs[0]) {
   case "input":
     input();
     break;
-  // case "reset":
-  //   console.log("Watched Episodes Reset");
-  //   console.log("------------------------------");
-  //   resetWorkingEpisodes();
-  //   break;
-  // case "search":
-  //   search(betterArgs[1]);
-  //   break;
-  // case "random":
-  //   let info = randomEpisode();
-  //   console.log(`S-Ep: ${info.season} - ${info.number}`);
-  //   console.log("------------------------------");
-  //   console.log(`${info.name}`);
-  //   console.log("------------------------------");
-  //   console.log(`${info.summary.replace(/<[^>]*>?/gm, "")}`);
-  //   console.log("------------------------------");
-  //   break;
   default:
     console.log("Sorry, that is not something I know how to do.");
 }
