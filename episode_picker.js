@@ -29,9 +29,6 @@ const input = function () {
         console.log("Watched Episodes Reset");
         resetWorkingEpisodes();
         break;
-      case "search":
-        search(betterArgs[1]);
-        break;
       case "random":
         let info = randomEpisode();
         console.log(`S-Ep: ${info.season} - ${info.number}`);
@@ -51,6 +48,9 @@ console.log(`Args: ${args}`);
 // console.log("------------------------------");
 
 switch (betterArgs[0]) {
+  case "search":
+    search(betterArgs[1]);
+    break;
   case "input":
     input();
     break;
