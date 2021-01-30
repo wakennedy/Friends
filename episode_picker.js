@@ -17,7 +17,7 @@ const input = function () {
         console.log("Type a Command or 'done' to end.");
         break;
       case "test":
-        console.log("Test Case in input function");
+        console.log("Test Output");
         break;
       case "another":
         console.log("Another Test Case");
@@ -35,8 +35,8 @@ const input = function () {
       case "random":
         let info = randomEpisode();
         console.log(`S-Ep: ${info.season} - ${info.number}`);
-        console.log(`${info.name}`);
-        console.log(`${info.summary.replace(/<[^>]*>?/gm, "")}`);
+        console.log(`Name: ${info.name}`);
+        console.log(`Summary: ${info.summary.replace(/<[^>]*>?/gm, "")}`);
         break;
       default:
         console.log("error");
